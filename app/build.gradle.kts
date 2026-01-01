@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.eventmate"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.eventmate"
@@ -46,6 +46,7 @@ dependencies {
     // Room
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.play.services.maps)
     ksp(libs.androidx.room.compiler)
 
     testImplementation(libs.junit)

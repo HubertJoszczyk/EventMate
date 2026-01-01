@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">EventMate</string>
+    <string name="add_event">Dodaj Event</string>
+    <string name="show_event_list">Pokaż listę eventów</string>
+    <string name="confirm_event">Zatwierdź dane</string>
+    <string name="phone_number_label">Podaj numer telefonu</string>
+    <string name="time_label">Podaj godzinę</string>
+    <string name="date_label">Podaj dzień</string>
+    <string name="number_of_people_label">Podaj ilość osób</string>
+    <string name="location_label">Podaj miejsce</string>
 </resources>

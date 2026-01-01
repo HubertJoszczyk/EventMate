@@ -31,6 +31,7 @@ abstract class AppDatabase : RoomDatabase() {
                     "event_database"
                 )
                 .fallbackToDestructiveMigration()
+                .setJournalMode(RoomDatabase.JournalMode.TRUNCATE) // Ułatwia podgląd w Database Inspector
                 .build()
                 INSTANCE = instance
                 instance
