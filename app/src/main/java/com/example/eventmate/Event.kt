@@ -23,5 +23,7 @@ data class Event(
     val title: String,
     val date: Long,
     val location: String,
-    val categoryId: Int? = null
+    val categoryId: Int? = null,
+    val photoUri: String? = null,    // Ścieżka do zdjęcia
+    val voiceNotePath: String? = null // Ścieżka do notatki głosowej
 )

@@ -12,7 +12,7 @@ import androidx.room.RoomDatabase
         Participant::class,
         EventParticipant::class
     ],
-    version = 6
+    version = 7
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun eventDao(): EventDao
@@ -31,7 +31,7 @@ abstract class AppDatabase : RoomDatabase() {
                     "event_database"
                 )
                 .fallbackToDestructiveMigration()
-                .setJournalMode(RoomDatabase.JournalMode.TRUNCATE) // Ułatwia podgląd w Database Inspector
+                .setJournalMode(RoomDatabase.JournalMode.TRUNCATE)
                 .build()
                 INSTANCE = instance
                 instance
